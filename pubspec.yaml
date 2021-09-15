@@ -20,7 +20,7 @@ dependencies:
   # Functional programing thingies
   dartz: any
   # Remote API
-  connectivity: ^3.0.6
+  data_connection_checker_tv: ^0.3.5-nullsafety
   http: any
   # Local cache
   shared_preferences: ^2.0.7

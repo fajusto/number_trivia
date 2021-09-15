@@ -4,7 +4,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:number_trivia/app/core/error/exceptions.dart';
 import 'package:number_trivia/app/core/error/failures.dart';
-import 'package:number_trivia/app/core/platform/network_info.dart';
+import 'package:number_trivia/app/core/network/network_info.dart';
 import 'package:number_trivia/app/features/number_trivia/data/datasources/number_trivia_local_data_source.dart';
 import 'package:number_trivia/app/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
 import 'package:number_trivia/app/features/number_trivia/data/models/number_trivia_model.dart';
