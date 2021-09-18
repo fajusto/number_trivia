@@ -2,6 +2,8 @@
 // in number_trivia/test/app/features/number_trivia/domain/usecases/get_random_number_trivia_test.dart.
 // Do not manually edit this file.
 
+// ignore_for_file: camel_case_types
+
 import 'dart:async' as _i4;
 
 import 'package:dartz/dartz.dart' as _i2;

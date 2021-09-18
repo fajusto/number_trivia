@@ -58,13 +58,27 @@ void main() {
         NumberTriviaModel(text: 'test trivia', number: tNumber);
     final NumberTrivia tNumberTrivia = tNumberTriviaModel;
 
+    test(
+      'should check if the device is online',
+      () async {
+        // arrange
+        when(mockNetworkInfo.isConnected).thenAnswer((_) async => true);
+        when(mockRemoteDataSource.getConcreteNumberTrivia(any))
+            .thenAnswer((_) async => tNumberTriviaModel);
+        // act
+        repository.getConcreteNumberTrivia(tNumber);
+        // assert
+        verify(mockNetworkInfo.isConnected);
+      },
+    );
+
     runTestsOnline(() {
       test(
           'should return remote data when the call to remote data source is successful',
           () async {
         // arrange
         when(mockRemoteDataSource.getConcreteNumberTrivia(any))
-            .thenAnswer((realInvocation) async => tNumberTriviaModel);
+            .thenAnswer((_) async => tNumberTriviaModel);
         // act
         final result = await repository.getConcreteNumberTrivia(tNumber);
         // assert
@@ -77,7 +91,7 @@ void main() {
           () async {
         // arrange
         when(mockRemoteDataSource.getConcreteNumberTrivia(any))
-            .thenAnswer((realInvocation) async => tNumberTriviaModel);
+            .thenAnswer((_) async => tNumberTriviaModel);
         // act
         await repository.getConcreteNumberTrivia(tNumber);
         // assert

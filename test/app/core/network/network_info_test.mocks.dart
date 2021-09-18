@@ -2,6 +2,8 @@
 // in number_trivia/test/app/core/network/network_info_test.dart.
 // Do not manually edit this file.
 
+// ignore_for_file: camel_case_types
+
 import 'dart:async' as _i3;
 
 import 'package:data_connection_checker_tv/data_connection_checker.dart' as _i2;
