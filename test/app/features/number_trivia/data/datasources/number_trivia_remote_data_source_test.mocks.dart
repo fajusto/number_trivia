@@ -2,6 +2,8 @@
 // in number_trivia/test/app/features/number_trivia/data/datasources/number_trivia_remote_data_source_test.dart.
 // Do not manually edit this file.
 
+// ignore_for_file: camel_case_types
+
 import 'dart:async' as _i5;
 import 'dart:convert' as _i6;
 import 'dart:typed_data' as _i7;

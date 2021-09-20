@@ -2,6 +2,8 @@
 // in number_trivia/test/app/features/number_trivia/data/repositories/number_trivia_repository_impl_test.dart.
 // Do not manually edit this file.
 
+// ignore_for_file: camel_case_types
+
 import 'dart:async' as _i4;
 
 import 'package:mockito/mockito.dart' as _i1;

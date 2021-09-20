@@ -14,7 +14,7 @@ dependencies:
   # Service locator
   get_it: any
   # Bloc for state management
-  flutter_bloc: any
+  flutter_bloc: ^7.2.0
   # Value equality
   equatable: 2.0.3
   # Functional programing thingies
